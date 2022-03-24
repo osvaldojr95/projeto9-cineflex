@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+
+    --color-orange: #E8833A;
+    --color-grey: #C3CFD9;
+}
+
+
+.root {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+h1 {
+    height: 70px;
+    width: 100%;
+    font-size: 34px;
+    font-weight: 400;
+    color: var(--color-orange);
+    background-color: var(--color-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
