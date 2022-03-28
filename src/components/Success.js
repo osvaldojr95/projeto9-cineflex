@@ -16,7 +16,7 @@ export default function Success() {
             <h4>{location.state.info.day.date} {location.state.info.name}</h4>
             <h3>Ingressos</h3>
             {location.state.reservations.map((seat) => {
-                return (<h4>Assento {seat}</h4>);
+                return (<h4>Assento {seat.name}</h4>);
             })}
             <h3>Comprador</h3>
             <h4>Nome: {location.state.name}</h4>

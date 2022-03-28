@@ -13,10 +13,10 @@ export default function Seat(props) {
             }
             if (status === "grey") {
                 setStatus("green");
-                attReservations(true, id);
+                attReservations(true, {id:id, name:name});
             } else {
                 setStatus("grey");
-                attReservations(false, id);
+                attReservations(false, {id:id, name:name});
             }
         }else{
             alert("Esse assento não está disponível");

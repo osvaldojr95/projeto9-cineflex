@@ -35,7 +35,7 @@ export default function Section() {
     }
 
     function finishReservation() {
-        const obj = { ids: reservations, name: name, cpf: cpf }
+        const obj = { ids: (reservations.map((seat)=>{return seat.id})), name: name, cpf: cpf }
         const promise = Axios.post(`https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many`, obj);
         promise.then((response) => {
             setDone(true);
